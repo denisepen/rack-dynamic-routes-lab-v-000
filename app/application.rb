@@ -10,7 +10,8 @@ class Application
           key
         end
         
-        if path.split.last.include?()
+        if items.include?(path.split.last)
+          resp.write "#{items[:key]}"
 
   end
 
