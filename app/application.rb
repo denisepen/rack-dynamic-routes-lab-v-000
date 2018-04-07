@@ -5,7 +5,7 @@ class Application
     resp = Rack::Response.new
     req =  Rack::Request.new
 
-    if req.path.match (/items/)
+    if req.path.match (""/items/")
       item_identifier = req.path.split("/items/").last
       item = @@items.find{|item| item.name == item_identifier}
       if item
