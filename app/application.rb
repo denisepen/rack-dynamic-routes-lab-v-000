@@ -12,14 +12,6 @@ class Application
       resp.write "Route not found"
       resp.status = 404
     end
-      # items = @@items.each do |key,value|
-      #     key
-      #   end
-      #
-      #   if items.include?(path.split.last)
-      #     resp.write "#{items[:key]}"
-      #   else
-      #     resp.write "400"
-
+    
   resp.finish
 end
